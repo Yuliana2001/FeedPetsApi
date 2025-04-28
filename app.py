@@ -55,6 +55,6 @@ def deletePet(nombre):
     return jsonify({"message":"no se encontró mascota con ese nombre"})
 
 
-if __name__ == '__main__':
-    app.run(debug=True, port=4000) #incializar y cuando se haga un cambio, se vuelva a iniciar
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=4000, debug=True) #incializar y cuando se haga un cambio, se vuelva a iniciar
     
